@@ -19,6 +19,10 @@
 
 ### Run Test Project
 
++ CD to test-project folder
+    ```linux
+    cd ./test-project
+    ```
 + complie contract & deploy contract
     ```linux
     truffle build
