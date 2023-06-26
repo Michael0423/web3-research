@@ -25,3 +25,5 @@
     truffle migrate
     ```
 + Find the From Address & Contract Address in Ganache > TRANSACTIONS tab, then replace the value in dapp > js > configs.js 
++ Deploy the dapp to your web server then visit the website
++ Enjoy the journey
