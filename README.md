@@ -4,3 +4,24 @@
 
 + Install [Ganache](https://trufflesuite.com/docs/ganache/) for local blockchain.
 + Install [Truffle](https://trufflesuite.com/docs/truffle/) for smart contract develop, compile, deploy to blockchain with Solidity.
+
+
+## Example 
+
+### test-project
+
++ Using Web3.js
++ Folder description: 
+    - contracts: contract code
+    - dapp: web app to interactive with contracts
++ Notice: The MetaCoin contract is not a ERC-20 contract!!!
+
+
+### Run Test Project
+
++ complie contract & deploy contract
+    ```linux
+    truffle build
+    truffle migrate
+    ```
++ Find the From Address & Contract Address in Ganache > TRANSACTIONS tab, then replace the value in dapp > js > configs.js 
