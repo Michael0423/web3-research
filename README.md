@@ -23,6 +23,9 @@
     ```linux
     cd ./test-project
     ```
++ Modify the config of truffle in ``truffle-config.js`` file
+    - find ``networks.development``
+    - change the config to your blockchain which create with Ganache
 + complie contract & deploy contract
     ```linux
     truffle build
