@@ -1,0 +1,14 @@
+.token-area {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+label {
+    margin-right: 5px;
+}
+
+.param:after {
+    content: '：';
+}
