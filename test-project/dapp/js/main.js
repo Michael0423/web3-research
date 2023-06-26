@@ -1,5 +1,6 @@
 import * as tokenList from "./token-list.js";
 import Web3Provider from './web3-provider.js';
+import configs from "./configs.js";
 
 const web3Instance = Web3Provider.web3Instance 
 console.log(tokenList.default);
@@ -9,7 +10,7 @@ const contracts = {};
 tokenList.default.forEach(token => {
     createTokenList(tokenListDiv, token);
     contracts[token.contractName] = new web3Instance.eth.Contract(token.abi, token.networks[5777].address);
-    contracts[token.contractName].defaultAccount = '0x67DfF0463BF6baE5072b84054Bb1F814FE2b1aDf'; // contract owner
+    contracts[token.contractName].defaultAccount = configs.defaultAccount; // contract owner
     contracts[token.contractName].defaultChain = 5777;
 });
 
